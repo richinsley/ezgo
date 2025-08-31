@@ -27,7 +27,9 @@ ezgo solves all of these problems by providing a simple, go mod-like workflow fo
 
 Ensure you have Go installed and your GOPATH is set up correctly, then simply run:
 
-go install \[github.com/richinsley/ezgo@latest\](https://github.com/richinsley/ezgo@latest)
+```
+go install github.com/richinsley/ezgo@latest
+```
 
 ## **Quick Start Guide**
 
