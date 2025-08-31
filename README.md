@@ -71,21 +71,21 @@ import "C"
 import "[github.com/go-gl/glfw/v3.3/glfw](https://github.com/go-gl/glfw/v3.3/glfw)"
 
 func main() {
-if err := glfw.Init(); err != nil {
-panic(err)
-}
-defer glfw.Terminate()
+  if err := glfw.Init(); err != nil {
+    panic(err)
+  }
+  defer glfw.Terminate()
 
-window, err := glfw.CreateWindow(640, 480, "Hello from EZGO\!", nil, nil)  
-if err \!= nil {  
-    panic(err)  
-}
+  window, err := glfw.CreateWindow(640, 480, "Hello from EZGO!", nil, nil)  
+  if err != nil {  
+      panic(err)  
+  }
 
-window.MakeContextCurrent()
+  window.MakeContextCurrent()
 
-for \!window.ShouldClose() {  
-    glfw.PollEvents()  
-}  
+  for window.ShouldClose() {  
+      glfw.PollEvents()  
+  }  
 }
 ```
 
