@@ -16,6 +16,7 @@ func SetupCGOEnvironment(isQuiet bool, packagesToInstall []string) (*CGOEnvironm
 	if err != nil {
 		return nil, err
 	}
+
 	// Use the main cache root for jumpboot. This ensures micromamba.exe is in a predictable location.
 	rootDirectory := cacheRoot
 
